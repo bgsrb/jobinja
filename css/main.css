@@ -1,0 +1,94 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.6;
+}
+
+html,
+body {
+    font-size: 14px;
+}
+
+body {
+    background: #e1e9ee;
+    direction: rtl;
+    text-align: right;
+}
+
+.btn.btn-primary.btn-apply {
+    background: #0073b1;
+}
+
+.btn.btn-outline-primary.btn-apply {
+    background: transparent;
+    color: #0073b1;
+    border: 1px solid #0073b1;
+}
+
+.btn.btn-outline-primary.btn-apply:hover {
+    background: transparent;
+    color: #0073b1;
+    border: 1px solid #0073b1;
+}
+
+.dropdown-menu {
+    text-align: right;
+}
+
+.dropdown-item {
+    padding: .5rem 1.5rem;
+}
+
+hr {
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    border-radius: 0;
+    border: 0;
+}
+
+.card-header {
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0.05);
+    /* color: rgba(0,0,0,0.7); */
+    /* font-weight: 600; */
+}
+
+.media img {
+    width: 50px;
+}
+
+img.logo {
+    width: 80px;
+}
+
+.card .card-body:not(:first) {
+    padding-top: 0;
+}
+
+.card .card-body:not(:last-child) {
+    padding-bottom: 0;
+}
+
+
+/* 
+
+    .feather {
+        width: 24px;
+        height: 24px;
+        stroke: currentColor;
+        stroke-width: 1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      } */
