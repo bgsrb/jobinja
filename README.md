@@ -1,2 +1,2 @@
 # jobinja
-This is Practice for Create Jobinja App with Bootstrap Like Linkedin Site.
+This is Practice Creating Jobinja App with Bootstrap Like Linkedin Site.
