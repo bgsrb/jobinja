@@ -34,9 +34,10 @@
   opacity: .5;
 }
 #sidebar a.nav-link{
-  color: #506c7d;
-  color: rgb(66, 82, 110);
-  padding: 1rem;
+  /* color: #506c7d; */
+  /* color: rgb(66, 82, 110); */
+  /* padding: 1rem; */
+  /* color: #7b909d; */
 }
 
 /* #sidebar a.nav-link:hover {
