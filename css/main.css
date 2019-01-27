@@ -16,25 +16,22 @@ h6 {
 html,
 body {
     font-size: 14px;
-}
-
-body {
     background: #e1e9ee;
     direction: rtl;
     text-align: right;
 }
 
-.btn.btn-primary.btn-apply {
+.btn-apply {
     background: #0073b1;
 }
 
-.btn.btn-outline-primary.btn-apply {
+.btn-apply {
     background: transparent;
     color: #0073b1;
     border: 1px solid #0073b1;
 }
 
-.btn.btn-outline-primary.btn-apply:hover {
+.btn-apply:hover {
     background: transparent;
     color: #0073b1;
     border: 1px solid #0073b1;
@@ -48,13 +45,8 @@ body {
     padding: .5rem 1.5rem;
 }
 
-
 .border-bottom-light{
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.media img {
-    width: 50px;
 }
 
 img.logo {
@@ -70,50 +62,73 @@ img.logo {
 }
 
 
-/* 
+/*
+    sidebar 
+*/
+#sidebar {
+    z-index: 1040;
+    position: fixed;
+    right: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 0;
+    margin-right: -304px;
+    border-left: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    z-index: 1041;
+  }
+  
+  .toggled {
+    padding-left: 0;
+  }
+  
+  .toggled #sidebar {
+    margin-right: 0;
+  }
 
-    .feather {
-        width: 24px;
-        height: 24px;
-        stroke: currentColor;
-        stroke-width: 1;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      } */
+  .modal-backdrop {
+    display: none;
+  }
 
-
-
-
-
-
-
-
-#navbar-bottom.navbar-light .navbar-nav .nav-link:focus,
-#navbar-bottom.navbar-light .navbar-nav .nav-link:hover
-{
+  .toggled .modal-backdrop {
+    display: block; 
+    opacity: .5;
+  }
+  
+  #sidebar .navbar-nav .nav-link:focus,
+  #sidebar .navbar-nav .nav-link:hover {
+      background-color: rgb(245, 248, 250);
+  }
+ 
+  
+/*
+    navbar 
+*/
+  #navbar-bottom .navbar-nav .nav-link:focus,
+  #navbar-bottom .navbar-nav .nav-link:hover
+  {
     color: rgb(29, 161, 242);
-
-}
-
-
-#sidebar .navbar-light .navbar-nav .nav-link:focus,
-#sidebar .navbar-light .navbar-nav .nav-link:hover {
-        background-color: rgb(245, 248, 250);
-}
-
-#navbar-bottom.navbar-light .navbar-nav .nav-link:focus svg,
-#navbar-bottom.navbar-light .navbar-nav .nav-link:hover svg {
-    stroke-width: 2;
-}
-
-#navbar-bottom.navbar-light .navbar-nav .nav-link>span {
-    border-radius: 100%;
-    padding: 7px;
-    display: inline-block;
-}
-
-#navbar-bottom.navbar-light .navbar-nav .nav-link:focus>span,
-#navbar-bottom.navbar-light .navbar-nav .nav-link:hover>span {
-    background-color: rgba(29, 161, 242, 0.1);
-}
+  }
+  
+  #navbar-bottom .navbar-nav .nav-link:focus svg,
+  #navbar-bottom.navbar-nav .nav-link:hover svg {
+      stroke-width: 2;
+  }
+  
+  #navbar-bottom .navbar-nav .nav-link>span {
+      border-radius: 100%;
+      padding: 7px;
+      display: inline-block;
+  }
+  
+  #navbar-bottom .navbar-nav .nav-link:focus>span,
+  #navbar-bottom .navbar-nav .nav-link:hover>span {
+      background-color: rgba(29, 161, 242, 0.1);
+  }
